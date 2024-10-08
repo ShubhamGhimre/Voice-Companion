@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  Hide scrollbar for Chrome, Safari and Opera
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    
+  }
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  height: 1px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #44485A;
+  border-radius: 5px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: #23283D;
+}
+.bg-red-gradient {
+  background: rgb(223, 0, 27);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 0, 27, 1) 0%,
+    rgba(255, 221, 223, 1) 100%
+  );
+}
+
+.bg-blue-gradient {
+  background: rgb(0, 117, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 117, 255, 1) 0%,
+    rgba(208, 235, 255, 1) 100%
+  );
+}
+
+.bg-green-gradient {
+  background: rgb(58, 205, 82);
+  background: linear-gradient(
+    66deg,
+    rgba(58, 205, 82, 1) 0%,
+    rgba(125, 255, 162, 1) 100%
+  );
+}
+
+.bg-yellow-gradient {
+  background: rgb(255, 148, 22);
+  background: linear-gradient(
+    122deg,
+    rgba(255, 148, 22, 1) 0%,
+    rgba(255, 224, 58, 1) 100%
+  );
+}
+
+.neutral-shadows-sm {
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(25, 33, 61, 0.7);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(25, 33, 61, 0.7);
+  box-shadow: 0px 1px 5px 0px rgba(25, 33, 61, 0.7);
+}
