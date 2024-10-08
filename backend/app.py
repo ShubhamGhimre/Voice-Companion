@@ -8,8 +8,8 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-os.environ['HUGGINGFACEHUB_API_TOKEN'] = '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'
-# os.environ['HF_TOKEN'] = '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'
+os.environ['HUGGINGFACEHUB_API_TOKEN'] = ''
+# os.environ['HF_TOKEN'] = ''
 
 
 repo_id = "mistralai/Mistral-7B-Instruct-v0.3"
